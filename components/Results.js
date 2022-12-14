@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Results() {
+function Results({ results }) {
   return (
-    <div>Res</div>
+    <div className="">
+      {results.map(result => (
+        <h1 key={result.title}>{result.title}</h1>
+      ))}
+    </div>
   );
 }
 
